@@ -54,3 +54,12 @@ streamlit run app.py
 
 ⭐️ Give it a Star
 If you liked this project or found it helpful, consider starring ⭐️ the repo!
+
+
+
+## License
+
+This project is licensed under the MIT License.  
+You are free to use, modify, and distribute this code with proper credit.
+
+See [LICENSE](LICENSE) for full details.
