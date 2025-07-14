@@ -8,18 +8,18 @@ st.set_page_config(page_title="Expense Tracker", layout="centered")
 
 st.title("💼 Automated Expense Tracker")
 
-# File
+
 file_name = "expenses.xlsx"
 
-# Create file if not exists
+
 if not os.path.exists(file_name):
     df = pd.DataFrame(columns=["Date", "Amount", "Category", "Note"])
     df.to_excel(file_name, index=False)
 
-# Load existing data
+
 df = pd.read_excel(file_name)
 
-# Sidebar: Input Form
+
 st.sidebar.header(" Add New Expense")
 
 with st.sidebar.form("expense_form"):
@@ -39,11 +39,10 @@ if submitted:
     df.to_excel(file_name, index=False)
     st.success("✅ Expense added successfully!")
 
-# Show Data Table
+
 st.subheader(" Expense History")
 st.dataframe(df, use_container_width=True)
 
-# Bar Chart
 st.subheader(" Spending by Category")
 
 if not df.empty:
