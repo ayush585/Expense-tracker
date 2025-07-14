@@ -34,15 +34,7 @@ To build a simple, beginner-friendly expense tracker that:
 
 ---
 
-## 📸 Screenshots
 
-| Expense Form | Visual Chart |
-|--------------|--------------|
-| ![Form Screenshot](https://via.placeholder.com/400x250?text=Form+Input) | ![Chart Screenshot](https://via.placeholder.com/400x250?text=Chart+Preview) |
-
-*(Replace above URLs with real screenshots if you want)*
-
----
 
 ## 📂 Folder Structure
 
