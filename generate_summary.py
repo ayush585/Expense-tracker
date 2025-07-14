@@ -12,13 +12,13 @@ class PDF(FPDF):
         self.set_font("Arial", "I", 8)
         self.cell(0, 10, f"Generated on {datetime.now().strftime('%Y-%m-%d')}", align="C")
 
-# Create PDF
+
 pdf = PDF()
 pdf.add_page()
 pdf.set_auto_page_break(auto=True, margin=15)
 pdf.set_font("Arial", size=11)
 
-# Clean text content (no emojis)
+
 lines = [
     "Built by: Ayushman Mukherjee",
     "Date: July 2025",
@@ -56,10 +56,10 @@ lines = [
 ]
 
 
-# Add lines to PDF
+
 for line in lines:
     pdf.multi_cell(0, 10, line)
 
-# Save
+
 pdf.output("summary.pdf")
 print("✅ summary.pdf generated successfully!")
